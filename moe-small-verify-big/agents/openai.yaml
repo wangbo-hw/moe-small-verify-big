@@ -1,0 +1,4 @@
+interface:
+  display_name: "MoE 以小验大"
+  short_description: "按实际安装环境采集专家路由、裁剪小模型，并验证推理质量与训练路径"
+  default_prompt: "使用 $moe-small-verify-big，先确认当前模型、权重和安装路径，再完成专家采集、裁剪与验证。"

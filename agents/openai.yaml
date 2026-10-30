@@ -1,0 +1,4 @@
+interface:
+  display_name: "MoE 以小验大"
+  short_description: "启动 vLLM(--enable-return-routed-experts) 采集 routed experts，统计热点专家并裁剪小模型，可选 aisbench 精度验证"
+  default_prompt: "使用 moe-small-verify-big，对模型 <模型路径> 执行以小验大：1) 用 scripts/vllm_server_base.sh 启动服务（务必带 --enable-return-routed-experts）；2) 用数据集 <数据集路径> 采集 routed experts；3) 统计 top<64> 热点专家；4) 裁剪模型并启动验证。"

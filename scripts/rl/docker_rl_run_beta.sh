@@ -1,0 +1,11 @@
+docker run -dit \
+        --ipc=host \
+        --network host \
+        --privileged \
+        --name 'deepseekv4-rl-beta-zwz' \
+        -v /usr/local/Ascend/driver:/usr/local/Ascend/driver \
+        -v /usr/local/Ascend/firmware:/usr/local/Ascend/firmware \
+        -v /usr/local/sbin/:/usr/local/sbin \
+        -v /etc/hccn.conf:/etc/hccn.conf \
+        -v /home/z00841464:/home/z00841464 \
+        --entrypoint /bin/bash rl-ds:beta2 -c "sleep infinity"
